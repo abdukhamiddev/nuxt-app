@@ -17,7 +17,13 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        gilroy: ["Gilroy", "sans-serif"],
+        baysoir: ["Baysoir", "sans-serif"],
+        boston: ["Boston", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }

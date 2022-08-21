@@ -1,36 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
     font-family: 'Gilroy';
-    src: url("~/assets/fonts/Gilroy-Medium.ttf");
+    src: url("~/assets/fonts/gilroy/Gilroy-Medium.ttf");
     font-weight: 300;
       font-display: swap;
   }
   
   @font-face {
     font-family: 'Gilroy';
-    src: url("~/assets/fonts/Gilroy-Bold.ttf");
+    src: url("~/assets/fonts/gilroy/Gilroy-Bold.ttf");
     font-weight: 700;
       font-display: swap;
   }
   @font-face {
     font-family: 'Gilroy';
-    src: url("~/assets/fonts/Gilroy-SemiBold.ttf");
+    src: url("~/assets/fonts/gilroy/Gilroy-SemiBold.ttf");
     font-weight: 500;
       font-display: swap;
   }
   
   @font-face {
     font-family: 'Gilroy';
-    src: url("~/assets/fonts/Gilroy-Black.ttf");
+    src: url("~/assets/fonts/gilroy/Gilroy-Black.ttf");
     font-weight: 700;
       font-display: swap;
   }
   @font-face {
     font-family: 'Gilroy';
-    src: url("~/assets/fonts/Gilroy-ExtraBold.ttf");
+    src: url("~/assets/fonts/gilroy/Gilroy-ExtraBold.ttf");
     font-weight: 800;
       font-display: swap;
   }
@@ -39,19 +35,21 @@
   
   @font-face {
     font-family: 'Boston';
-    src: url("~/assets/fonts/Boston-Regular.otf");
+    src: url("~/assets/fonts/boston/Boston-Regular.otf");
     font-weight: 300;
       font-display: swap;
   }
+ 
   @font-face {
     font-family: 'Boston';
-    src: url("~/assets/fonts/Boston-SemiBold.otf");
+    src: url("~/assets/fonts/boston/Boston-SemiBold.otf");
     font-weight: 500;
       font-display: swap;
   }
+  
   @font-face {
     font-family: 'Boston';
-    src: url("~/assets/fonts/Boston-Bold.otf");
+    src: url("~/assets/fonts/boston/Boston-Bold.otf");
     font-weight: 700;
       font-display: swap;
   }
@@ -60,7 +58,7 @@
   
   @font-face {
     font-family: 'Baysoir';
-    src: url("~/assets/fonts/Baysoir.otf");
+    src: url("~/assets/fonts/baysoir/Baysoir.otf");
     font-weight: 500;
       font-display: swap;
   }
