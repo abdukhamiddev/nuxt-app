@@ -17,7 +17,11 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
   ],
   theme: {
+
     extend: {
+      screens: {
+        'rm': '576px',
+      },
       fontFamily: {
         gilroy: ["Gilroy", "sans-serif"],
         baysoir: ["Baysoir", "sans-serif"],
@@ -25,5 +29,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -1,1 +1,41 @@
-@import './fonts.scss'
+@import './fonts.scss';
+
+.move-smooth-x {
+    animation-name: moveSmooth;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.1s;
+  }
+  
+  .move-smooth-y {
+    animation-name: moveSmoothY;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.1s;
+  }
+  
+  @keyframes moveSmooth {
+    from {
+      transform: translate(10px) scale(1.01);
+    }
+    50% {
+      transform: translate(0) scale(1);
+    }
+    to {
+      transform: translate(10px) scale(1.01);
+    }
+  }
+  
+  @keyframes moveSmoothY {
+    from {
+      transform: translateY(10px) scale(1.01);
+    }
+    50% {
+      transform: translateY(0) scale(1);
+    }
+    to {
+      transform: translateY(10px) scale(1.01);
+    }
+  }
