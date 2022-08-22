@@ -1,4 +1,4 @@
-@import './fonts.scss';
+
 
 .move-smooth-x {
     animation-name: moveSmooth;
@@ -16,6 +16,23 @@
     animation-delay: 0.1s;
   }
   
+  
+.menu-white {
+  //background-color: rgba($color: #000000, $alpha: .0) !important;
+  animation: enterMenu 0.5s linear 0.1s 1 normal both;
+
+  nav {
+    background-color: white;
+  }
+}
+  @keyframes enterMenu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   @keyframes moveSmooth {
     from {
       transform: translate(10px) scale(1.01);

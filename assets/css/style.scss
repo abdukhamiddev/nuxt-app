@@ -109,4 +109,20 @@
     text-decoration: none;
   }
 
+} 
+.menu-white {
+  //background-color: rgba($color: #000000, $alpha: .0) !important;
+  animation: enterMenu 0.5s linear 0.1s 1 normal both;
+
+  nav {
+    background-color: white;
+  }
 }
+  @keyframes enterMenu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
