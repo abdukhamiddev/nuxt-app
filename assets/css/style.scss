@@ -126,3 +126,44 @@
       opacity: 1;
     }
   }
+  .container-body {
+    max-width: 95%;
+    min-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+   @media only screen and (min-width: 576px) {
+    max-width: 80%;
+    min-width: 80%;
+   }
+    @media only screen and (min-width: 992px) {
+      max-width: 80%;
+      min-width: 80%;
+    }
+  }
+  .under-line {
+    a {
+      
+        position: relative;
+  
+        &:before {
+          content: '';
+          height: 0.05em;
+          background-color: white;
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          transition: width 0.3s linear;
+          right: 0;
+          //z-index: 10;
+        }
+  
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  .nav-big-text{
+@apply font-gilroy font-bold  lg:text-6xl lg:leading-[90px] text-3xl leading-snug sm:text-3xl md:text-4xl
+  }
+  
+  

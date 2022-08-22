@@ -23,15 +23,92 @@
                         alt="Whatsapp Lyonn Contact" />
                 </div>
             </div>
-            <div class="w-[100vw] fixed  bg-[#000000]  z-20  min-h-screen  inset-0 translate-y-[-100%] transition-transform duration-300"
+            <div class="w-[100vw] fixed  bg-[#000000]  z-20  min-h-screen  inset-0 translate-y-[-100%] transition-transform duration-300 overflow-y-scroll px-4 lg:px-6 "
                 :class="showMenu ? 'translate-y-[]' : ''">
-                <button ref="toggler" @click="toggleHandler"
-                    class="z-30 bg-transparent cursor-pointer border-[hsla(0,0%,100%,.1)] rounded-md border border-solid py-1 px-3"
-                    :class="toggled ? 'focus:outline-[2px] focus:outline  focus:outline-slate-100' : 'focus:outline-black focus:outline-[1px] focus:outline'">
-                    <HamburgerMenu class="w-5 h-5 transition-all duration-300 black-ico"
-                        :class="toggled ? 'white-ico' : 'black-ico'" :x22="toggled ? '21' : '22'">
-                    </HamburgerMenu>
-                </button>
+                <div class="flex items-center justify-between h-32 ">
+                    <div>
+                        <button ref="toggler" @click="toggleHandler"
+                            class="z-30 bg-transparent cursor-pointer border-[hsla(0,0%,100%,.1)] rounded-md border border-solid py-1 px-3"
+                            :class="toggled ? 'focus:outline-[2px] focus:outline  focus:outline-slate-100' : 'focus:outline-black focus:outline-[1px] focus:outline'">
+                            <HamburgerMenu class="w-5 h-5 transition-all duration-300 black-ico"
+                                :class="toggled ? 'white-ico' : 'black-ico'" :x22="toggled ? '21' : '22'">
+                            </HamburgerMenu>
+                        </button>
+                    </div>
+                    <div>
+                        <NuxtLink to="/" @click="toggleHandler">
+                            <img src="~/assets/img/ico/lyonn-w.svg" alt="" class="w-8 h-8">
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="flex flex-wrap pt-6 h-fit">
+                    <div class="flex-wrap items-center justify-between sm:flex container-body ">
+                        <ul class="text-white ">
+                            <li class="under-line nav-big-text">
+                                <NuxtLink to="/areas/design"> Design.</NuxtLink>
+                            </li>
+                            <li class="under-line nav-big-text">
+                                <NuxtLink to=" /areas/web">Web Development.</NuxtLink>
+                            </li>
+                            <li class="under-line nav-big-text">
+                                <NuxtLink to="/areas/marketing">Marketing.</NuxtLink>
+                            </li>
+                            <li class="under-line nav-big-text">
+                                <NuxtLink to="/areas/visual">Audiovisual.</NuxtLink>
+                            </li>
+                        </ul>
+                        <ul
+                            class="flex justify-between mt-4 text-lg text-white md:text-xl sm:block h-fit font-gilroy opacity-80">
+                            <div>
+                                <li class="under-line">
+                                    <NuxtLink to="/areas/design">HOME.</NuxtLink>
+                                </li>
+                                <li class="under-line">
+                                    <NuxtLink to="/areas/design">SERVICES.</NuxtLink>
+                                </li>
+                                <li class="under-line">
+                                    <NuxtLink to="/areas/design">GALLERY.</NuxtLink>
+                                </li>
+                            </div>
+                            <div>
+                                <li class="under-line">
+                                    <NuxtLink to="/areas/design">PORTFOLIO.</NuxtLink>
+                                </li>
+                                <li class="under-line">
+                                    <NuxtLink to="/areas/design">ABOUT US.</NuxtLink>
+                                </li>
+                                <li class="under-line">
+                                    <NuxtLink to="/areas/design">CONTACT.</NuxtLink>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-wrap pt-8 pb-6 text-white">
+                    <div class="flex flex-col justify-between container-body sm:flex-row">
+                        <div class="w-3/5 sm:w-auto">
+                            <div
+                                class="grid grid-cols-1 pb-4 text-xs leading-normal sm:flex gap-x-6 lg:text-base md:pb-0">
+                                <div class="flex flex-col sm:flex-row gap-x-3">
+                                    <a href="" class="line">Facebook</a>
+                                    <a class="">Instagram</a>
+                                </div>
+                                <div class="flex flex-col sm:flex-row gap-x-3">
+                                    <a class="">LinkedIn</a>
+                                    <a class="">WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col text-xs sm:flex-row gap-x-5 lg:text-base">
+                            <a href="#">Phone (443) 220 9267</a>
+                            <a href="#">Office (443) 506
+                                0575</a>
+                            <a class="" href="#">Mail
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -68,7 +145,6 @@ export default {
                 }
                 window.addEventListener('scroll', f)
             }
-
         }
     },
     mounted() {
