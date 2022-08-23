@@ -18,7 +18,7 @@
                     </nuxt-link>
                 </div>
                 <div class="flex items-center cursor-pointer text-dark underline-hover" href="#">
-                    <span class="font-gilroy font-700 text-[12px] ">Contact Us</span>
+                    <span class="font-gilroy font-700 text-[12px] under-line-right">Contact Us</span>
                     <img class="w-4 h-4 mb-1 ml-4 align-middle" src="~/assets/img/ico/wp-positive.svg"
                         alt="Whatsapp Lyonn Contact" />
                 </div>

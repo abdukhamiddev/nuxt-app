@@ -167,3 +167,67 @@
   }
   
   
+  .color-dev-hover {
+    transition: all 0.3s linear;
+  
+    &:hover {
+      background-color: #22aff8;
+      color: white;
+    }
+  }
+  
+  .color-mk-hover {
+    transition: all 0.3s linear;
+  
+    &:hover {
+      background-color: #6ec028;
+      color: white;
+    }
+  }
+  
+  .color-prod-hover {
+    transition: all 0.3s linear;
+  
+    &:hover {
+      background-color: #631588;
+      color: white;
+    }
+  }
+  .color-design-hover {
+    transition: all 0.3s linear;
+  
+    &:hover {
+      background-color:#ff5a5f;
+      color: white;
+    }
+  }
+  
+  .color-reg-hover {
+    transition: all 0.3s linear;
+  
+    &:hover {
+      background-color: #fa8232;
+      color: white;
+    }
+  }  
+  .under-line-right {
+    
+        position: relative;
+
+        &:after {
+          content: '';
+          height: 0.05em;
+          background-color: black;
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          transition: width 0.3s linear;
+          right: 0;
+          //z-index: 10;
+        }
+  
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    

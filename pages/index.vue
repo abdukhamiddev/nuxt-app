@@ -41,17 +41,58 @@
                     <HeroCard imageUrl="/assets/img/ico/area-p.a.svg" text="Audiovisual production." />
                 </div>
             </div>
+
         </section>
 
-        <section>
-            <div class="flex items-center justify-between container-body">
-                <div class="">
-                    <h2 class="text-[40px] font-semibold text-center font-gilroy sm:text-left">Our
+        <section class="lg:mb-[230px]  md:mb-[180px] mb-[150px]  container">
+            <div class="flex items-center justify-between container-body mb-[50px] md:mb-[105px]  mt-12 ">
+                <div class="pl-12 md:pl-0">
+                    <h2 class="lg:text-[40px] font-semibold text-center font-gilroy sm:text-left md:px-3 text-3xl">Our
                         <br>
                         Services.
                     </h2>
                 </div>
+
+                <MoreLink text="View All Our Services" class="hidden w-32 sm:block under-line-right" />
+
             </div>
+            <div
+                class="grid content-center justify-center grid-cols-1 px-12 lg:grid-cols-4 md:px-12 sm:px-1 place-items-center md:grid-cols-2">
+                <!--      <div class="flex-wrap px-4 container-body px-sm-0 d-flex align-items-center justify-content-between">-->
+                <div class="flex flex-col md:px-4 sm:px-0 ">
+                    <!--Column for design-->
+                    <div v-for="(service, index) in designDataServices.services" v-bind:key="index">
+                        <Services :serviceTit="service" :area="designDataServices.titleArea"
+                            :urlIco="designDataServices.urlIco"></Services>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:px-4 sm:px-0 ">
+                    <!--Column for DT-->
+                    <div v-for="(service, index) in devDataServices.services" v-bind:key="index">
+                        <Services :serviceTit="service" :area="devDataServices.titleArea"
+                            :urlIco="devDataServices.urlIco">
+                        </Services>
+                    </div>
+                </div>
+                <div class="flex flex-col md:px-4 sm:px-0 ">
+                    <!--Column for MARKETING-->
+                    <div v-for="(service, index) in mkDataServices.services" v-bind:key="index">
+                        <Services :serviceTit="service" :area="mkDataServices.titleArea"
+                            :urlIco="mkDataServices.urlIco">
+                        </Services>
+                    </div>
+                </div>
+                <div class="flex flex-col md:px-4 sm:px-0 ">
+                    <!--Column for AUDIOVISUAL PRODUCTION-->
+                    <div v-for="(service, index) in prodDataServices.services" v-bind:key="index">
+                        <Services :serviceTit="service" :area="prodDataServices.titleArea"
+                            :urlIco="prodDataServices.urlIco">
+                        </Services>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
 </template>
@@ -61,6 +102,8 @@ import BlueCircle from '~~/components/icons/BlueCircle'
 import RedCircle from '~~/components/icons/RedCircle'
 import HeaderMenu from '~~/components/layout/HeaderMenu'
 import HeroCard from '~~/components/pages/HeroCard'
+import MoreLink from '~~/components/common/MoreLink.vue'
+import Services from '../components/pages/Services.vue'
 
 
 
@@ -69,8 +112,53 @@ export default {
         BlueCircle,
         RedCircle,
         HeaderMenu,
-        HeroCard
+        HeroCard,
+        MoreLink,
+        Services
     },
+    data: function () {
+
+        return {
+            designDataServices: {
+                titleArea: 'design',
+                urlIco: '/assets/img/ico/area-desing-simple.svg',
+                services: [
+
+                    'Brand Design',
+                    'Logo Design',
+                    'Advertising Design'
+                ]
+            },
+            devDataServices: {
+                titleArea: 'dev',
+                urlIco: '/assets/img/ico/area-dev-simple.svg',
+                services: [
+                    'Websites Ecommerce',
+                    'Web Systems ',
+                    'Systems Management'
+                ]
+            },
+            mkDataServices: {
+                titleArea: 'mk',
+                urlIco: '/assets/img/ico/area-mk-simple.svg',
+                services: [
+                    'Marketing Strategies',
+                    'Social Media',
+                    'Trademark Registration'
+                ]
+            },
+            prodDataServices: {
+                titleArea: 'prod',
+                urlIco: '/assets/img/ico/area-prod-simple.svg',
+                services: [
+                    'Commercial Spots',
+                    'Motion Graphics',
+                    'Product Photography'
+                ]
+            }
+        }
+    },
+
     setup() {
 
 
