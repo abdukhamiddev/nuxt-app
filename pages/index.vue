@@ -29,16 +29,16 @@
             <div
                 class="flex md:max-w-[85%] lg:max-w-[70%] items-center justify-center mx-auto max-w-[90%] flex-col md:flex-row mt-12">
                 <div>
-                    <HeroCard imageUrl="~/assets/img/ico/area-design.svg" text="Graphic Design." />
+                    <HeroCard imageUrl="/assets/img/ico/area-design.svg" text="Graphic Design." />
                 </div>
                 <div>
-                    <HeroCard imageUrl="~/assets/img/ico/area-d.t.svg" text="Web Development." />
+                    <HeroCard imageUrl="/assets/img/ico/area-d.t.svg" text="Web Development." />
                 </div>
                 <div>
-                    <HeroCard imageUrl="~/assets/img/ico/area-m.k.svg" text="Digital Marketing." />
+                    <HeroCard imageUrl="/assets/img/ico/area-m.k.svg" text="Digital Marketing." />
                 </div>
                 <div>
-                    <HeroCard imageUrl="~/assets/img/ico/area-p.a.svg" text="Audiovisual production." />
+                    <HeroCard imageUrl="/assets/img/ico/area-p.a.svg" text="Audiovisual production." />
                 </div>
             </div>
 
@@ -134,6 +134,10 @@ import Description from '~~/components/pages/home/Description.vue'
 import ServicesTable from '~~/components/pages/home/ServicesTable.vue'
 import CallToAction from '~~/components/layout/CallToAction.vue'
 import Footer from '~~/components/layout/Footer.vue'
+import designIcon from "@/assets/img/ico/area-desing-simple.svg"
+import mkIcon from "@/assets/img/ico/area-mk-simple.svg"
+import prodIcon from "@/assets/img/ico/area-prod-simple.svg"
+import devIcon from "@/assets/img/ico/area-dev-simple.svg"
 
 
 
@@ -155,7 +159,7 @@ export default {
         return {
             designDataServices: {
                 titleArea: 'design',
-                urlIco: '~/assets/img/ico/area-desing-simple.svg',
+                urlIco: designIcon,
                 services: [
 
                     'Brand Design',
@@ -165,7 +169,7 @@ export default {
             },
             devDataServices: {
                 titleArea: 'dev',
-                urlIco: '~/assets/img/ico/area-dev-simple.svg',
+                urlIco: devIcon,
                 services: [
                     'Websites Ecommerce',
                     'Web Systems ',
@@ -174,7 +178,7 @@ export default {
             },
             mkDataServices: {
                 titleArea: 'mk',
-                urlIco: '~/assets/img/ico/area-mk-simple.svg',
+                urlIco: mkIcon,
                 services: [
                     'Marketing Strategies',
                     'Social Media',
@@ -183,7 +187,7 @@ export default {
             },
             prodDataServices: {
                 titleArea: 'prod',
-                urlIco: '~/assets/img/ico/area-prod-simple.svg',
+                urlIco: prodIcon,
                 services: [
                     'Commercial Spots',
                     'Motion Graphics',

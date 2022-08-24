@@ -17,7 +17,6 @@ export default {
     name: "home-services",
     props: {
         urlIco: {
-            type: String
         },
         serviceTit: {
             type: String,
