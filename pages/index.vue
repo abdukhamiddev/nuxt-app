@@ -44,7 +44,7 @@
 
         </section>
 
-        <section class="lg:mb-[230px]  md:mb-[180px] mb-[150px]  container">
+        <section class="container section-spacing">
             <div class="flex items-center justify-between container-body mb-[50px] md:mb-[105px]  mt-12 ">
                 <div class="pl-12 md:pl-0">
                     <h2 class="lg:text-[40px] font-semibold text-center font-gilroy sm:text-left md:px-3 text-3xl">Our
@@ -94,6 +94,27 @@
             </div>
 
         </section>
+        <section class="section-spacing">
+
+            <div class="px-0 container-body md:px-6">
+                <h2 class="text-[40px] font-bold text-center font-gilroy section-spacing">Over
+                    <span class="text-[#ff5a5f]">+100</span>
+                    Projects Made by Our Services, Web Design and Professional Logo Design Areas.
+                </h2>
+                <div class="flex flex-wrap md:flex-nowrap ">
+                    <Description class="lg:max-w-[50%] md:max-w-[50%]  pr-12 sm:pr-6"
+                        title="Digital Agency, All In One Place." description="
+            Lyonn Agency as a digital agency can take care of covering all the aspects to boost your business. Starting
+            from the logo design and a creative branding until share you brand on social media.
+            Lyonn can create all content following a creative digital advertising campaigns. We can help with the design
+            and development of your own website, using many technologies like WordPress. Also we can provide you design
+            of digital banners for websites or social media according to you brand." />
+                    <ServicesTable
+                        class="h-auto md:h-[350px] xl:px-8  mt-12 lg:mt-20  xl:ml-[17%] lg:ml-[6%]  xl:max-w-[59%] md:max-w-[66%]  " />
+                </div>
+            </div>
+
+        </section>
     </div>
 </template>
 
@@ -101,9 +122,11 @@
 import BlueCircle from '~~/components/icons/BlueCircle'
 import RedCircle from '~~/components/icons/RedCircle'
 import HeaderMenu from '~~/components/layout/HeaderMenu'
-import HeroCard from '~~/components/pages/HeroCard'
+import HeroCard from '~~/components/pages/home/HeroCard'
 import MoreLink from '~~/components/common/MoreLink.vue'
-import Services from '../components/pages/Services.vue'
+import Services from '~~/components/pages/home/Services.vue'
+import Description from '~~/components/pages/home/Description.vue'
+import ServicesTable from '~~/components/pages/home/ServicesTable.vue'
 
 
 
@@ -114,7 +137,9 @@ export default {
         HeaderMenu,
         HeroCard,
         MoreLink,
-        Services
+        Services,
+        Description,
+        ServicesTable
     },
     data: function () {
 

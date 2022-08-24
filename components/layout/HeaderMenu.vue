@@ -1,9 +1,10 @@
 <template>
-    <div class="fixed z-[11] bg-transparent w-full" ref="menuHeaderRef" v-scroll="handleScroll">
-        <nav class="relative px-0 h-[110px] flex pt-2 px4 justify-between items-center flex-wrap">
-            <div class="flex items-center justify-between w-full px-4 lg:px-12">
+    <div class="fixed z-[11]  w-full">
+        <nav class=" relative px-0 h-[110px] flex pt-2 px4 justify-between items-center flex-wrap">
+            <div class="flex items-center justify-between w-full px-4 bg-transparent lg:px-12" ref="menuHeaderRef"
+                v-scroll="handleScroll">
 
-                <button ref="toggler" @click="toggleHandler" class="bg-transparent cursor-pointer
+                <button ref=" toggler" @click="toggleHandler" class="bg-transparent cursor-pointer
                     border-[hsla(0,0%,100%,.1)] rounded-md border border-solid py-1 px-3
                     focus:outline-black focus:outline-[2px] focus:outline">
                     <HamburgerMenu class="w-5 h-5 transition-all duration-300 black-ico">
@@ -23,7 +24,7 @@
                         alt="Whatsapp Lyonn Contact" />
                 </div>
             </div>
-            <div class="w-[100vw] fixed  bg-[#000000]  z-20  min-h-screen  inset-0 translate-y-[-100%] transition-transform duration-300 overflow-y-scroll px-4 lg:px-6 "
+            <div class="w-[100vw] fixed  bg-[#000000]  z-20  min-h-screen  inset-0 translate-y-[-100%] transition-transform duration-300  px-4 lg:px-12"
                 :class="showMenu ? 'translate-y-[]' : ''">
                 <div class="flex items-center justify-between h-32 ">
                     <div>
