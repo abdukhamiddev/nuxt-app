@@ -102,19 +102,24 @@
                     Projects Made by Our Services, Web Design and Professional Logo Design Areas.
                 </h2>
                 <div class="flex flex-wrap md:flex-nowrap ">
-                    <Description class="lg:max-w-[50%] md:max-w-[50%]  pr-12 sm:pr-6"
-                        title="Digital Agency, All In One Place." description="
+                    <Description
+                        classBtn="bg-indigo-500 transition-all duration-[0.3s] hover:bg-white text-white hover:text-black  outline-none"
+                        class="lg:max-w-[50%] md:max-w-[50%]  pr-12" title="Digital Agency, All In One Place."
+                        description="
             Lyonn Agency as a digital agency can take care of covering all the aspects to boost your business. Starting
             from the logo design and a creative branding until share you brand on social media.
             Lyonn can create all content following a creative digital advertising campaigns. We can help with the design
             and development of your own website, using many technologies like WordPress. Also we can provide you design
             of digital banners for websites or social media according to you brand." />
-                    <ServicesTable
-                        class="h-auto md:h-[350px] xl:px-8  mt-12 lg:mt-20  xl:ml-[17%] lg:ml-[6%]  xl:max-w-[59%] md:max-w-[66%]  " />
+                    <ServicesTable class="h-fit md:h-[350px]  mt-12    xl:max-w-[59%] md:max-w-[66%]  " />
                 </div>
             </div>
-
         </section>
+
+        <CallToAction mainTitle="Don´t Lose The Opportunity To Grow Your Business!"
+            subTitle="Get a 10% discount if you mention that you visited our page" class="space-bottom-section">
+        </CallToAction>
+        <Footer class="mb-5"></Footer>
     </div>
 </template>
 
@@ -127,6 +132,8 @@ import MoreLink from '~~/components/common/MoreLink.vue'
 import Services from '~~/components/pages/home/Services.vue'
 import Description from '~~/components/pages/home/Description.vue'
 import ServicesTable from '~~/components/pages/home/ServicesTable.vue'
+import CallToAction from '~~/components/layout/CallToAction.vue'
+import Footer from '~~/components/layout/Footer.vue'
 
 
 
@@ -139,7 +146,9 @@ export default {
         MoreLink,
         Services,
         Description,
-        ServicesTable
+        ServicesTable,
+        CallToAction,
+        Footer
     },
     data: function () {
 

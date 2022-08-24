@@ -24,7 +24,7 @@
                         alt="Whatsapp Lyonn Contact" />
                 </div>
             </div>
-            <div class="w-[100vw] fixed  bg-[#000000]  z-20  min-h-screen  inset-0 translate-y-[-100%] transition-transform duration-300  px-4 lg:px-12"
+            <div class="w-[100vw] fixed  bg-[#000000]  z-20  min-h-screen  inset-0 translate-y-[-100%] transition-transform duration-300  px-4 lg:px-12 overflow-y-scroll"
                 :class="showMenu ? 'translate-y-[]' : ''">
                 <div class="flex items-center justify-between h-32 ">
                     <div>

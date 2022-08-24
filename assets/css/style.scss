@@ -73,12 +73,22 @@
   background-color: black;
   color: white;
   transition: all 0.3s linear;
-  border: 1px solid transparent !important;
+  border: 1px solid  !important;
 
   &:hover {
     background-color: white;
     color: black;
     border: 1px solid black !important;
+  }
+
+}
+
+.btn-red {
+  color: white;
+  transition: all 0.3s linear;
+  border: 1px solid transparent !important;
+  &:hover {
+      border: 1px solid black !important;
   }
 
 }
@@ -97,7 +107,7 @@
 .btn-default{
   border-radius: 50px;
   padding:15px 40px;
-  border: none;
+  
   font-family: Gilroy;
   font-weight: 700;
   font-size: em(16);
@@ -299,3 +309,142 @@
       }
     }
   }
+
+  .curved-background {
+    background-image: url("../img/ico/backgrounds/curved-bg-xs.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+  
+    @media only screen and (min-width: 576px) {
+    
+
+      background-image: url("../img/ico/backgrounds/curved-bg-sm.svg");
+      background-size: cover;
+      height: 400px;
+    }
+    @media only screen and (min-width: 768px) {
+    
+    
+      background-image: url("../img/ico/backgrounds/curved-bg-md.svg");
+      background-size: cover;
+      height: 400px;
+    }
+  @media only screen and (min-width: 1080px) {
+  
+  
+      background-image: url("../img/ico/backgrounds/curved-bg-lg.svg");
+      background-size: cover;
+      height: 440px;
+    }
+  }
+  .ico-call-action {
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+  
+    @media only screen and (min-width: 576px) {
+    
+    
+      left: 0;
+      top: 0;
+      transform: translateX(0);
+    }
+  @media only screen and (min-width: 768px) {
+  
+  
+      left: -12%;
+      //top: 0;
+      //transform: translateX(0);
+    }
+  }
+  .expanded {
+    &:after {
+      transform: rotate(180deg);
+      transform-origin: center;
+    }
+  }
+  
+  .list-footer {
+    list-style: none;
+    padding-left: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+  
+     @media only screen and (min-width: 768px) {
+     
+     
+      max-height: fit-content;
+    }
+  
+    li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  
+      a {
+        color: black;
+        font-size: 16px;
+        font-family: "gilroy-medium";
+        font-weight: 300;
+        
+  
+        @media only screen and (min-width: 568px) {
+        
+        
+          font-size: 13px;
+        }
+  
+        @media only screen and (min-width: 768px) {
+        
+      
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .title-area-footer {
+  position: relative;
+
+  &:after {
+    content: '';
+    background-image: url("../img/ico/arrow-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    //transform: translateY(-50%);
+    right: 0;
+
+    @media only screen and (min-width: 768px) {
+    
+    
+      content: none;
+    }
+  }
+}
+.btn-round {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  background-image: url("../img/ico/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center;
+  padding: 20px;
+  transition:  opacity 0.3s linear;
+  
+  opacity: 0.6;
+  &:hover{
+    opacity: 1;
+  }
+}
