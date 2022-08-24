@@ -29,16 +29,16 @@
             <div
                 class="flex md:max-w-[85%] lg:max-w-[70%] items-center justify-center mx-auto max-w-[90%] flex-col md:flex-row mt-12">
                 <div>
-                    <HeroCard imageUrl="/assets/img/ico/area-design.svg" text="Graphic Design." />
+                    <HeroCard :imageUrl="urls.designIco" text="Graphic Design." />
                 </div>
                 <div>
-                    <HeroCard imageUrl="/assets/img/ico/area-d.t.svg" text="Web Development." />
+                    <HeroCard :imageUrl="urls.devIcon" text="Web Development." />
                 </div>
                 <div>
-                    <HeroCard imageUrl="/assets/img/ico/area-m.k.svg" text="Digital Marketing." />
+                    <HeroCard :imageUrl="urls.mkIcon" text="Digital Marketing." />
                 </div>
                 <div>
-                    <HeroCard imageUrl="/assets/img/ico/area-p.a.svg" text="Audiovisual production." />
+                    <HeroCard :imageUrl="urls.prodIcon" text="Audiovisual production." />
                 </div>
             </div>
 
@@ -138,6 +138,10 @@ import designIcon from "@/assets/img/ico/area-desing-simple.svg"
 import mkIcon from "@/assets/img/ico/area-mk-simple.svg"
 import prodIcon from "@/assets/img/ico/area-prod-simple.svg"
 import devIcon from "@/assets/img/ico/area-dev-simple.svg"
+import design from "@/assets/img/ico/area-design.svg"
+import mk from "@/assets/img/ico/area-m.k.svg"
+import prod from "@/assets/img/ico/area-p.a.svg"
+import dev from "@/assets/img/ico/area-d.t.svg"
 
 
 
@@ -157,6 +161,12 @@ export default {
     data: function () {
 
         return {
+            urls: {
+                designIco: design,
+                mkIcon: mk,
+                prodIcon: prod,
+                devIcon: dev
+            },
             designDataServices: {
                 titleArea: 'design',
                 urlIco: designIcon,
